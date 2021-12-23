@@ -1,0 +1,34 @@
+.top_link{
+    text-decoration: none;
+    text-align: right;
+    color:black;
+}
+
+.top_link:hover{
+    text-decoration: underline;
+    text-align: right;
+    color:black;
+}
+
+.input_line{
+    width: 400px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding-left:15px;
+    padding-right:15px;
+    border: solid 1px grey;
+}
+
+.logo_container{
+    position:relative;
+    margin-top: 100px;
+}
+
+.logo_text{
+    position:absolute;
+    left:215px;
+    bottom:0;
+    white-space:nowrap; 
+    color:blue;
+}
