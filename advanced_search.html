@@ -8,25 +8,100 @@
     </head>
     <body>
         <div class="conteiner">
-            <div class="d-flex justify-content-end">
+            <div class="d-flex flex-wrap justify-content-end">
+                <img class="mr-auto m-2 google_logo" src="google_logo.jpg" alt="Google Logo">
                 <a class="m-2 top_link" href="index.html">Стандартний пошук</a>
                 <a class="m-2 top_link" href="img_search.html">Пошук зображень</a>
             </div>
-            <div class="d-flex justify-content-center">
-                <div class="logo_container">
-                    <img class="logo" src="googlelogo_color_272x92dp.png" alt="Логотип Google">
-                    <span class="logo_text">Зображення</span>
-                </div>
+            <div class="text_advanced">
+                Розширений пошук
             </div>
-            <form action="https://google.com/search">
-                <div class="d-flex justify-content-center">
-                    <input class="input_line" type="text" name="q">
-                </div>
-                <div class="d-flex justify-content-center button_line">
-                    <input class="btn btn-light search_button" type="submit" value="Шукати зображення">
-                    <input type="hidden"  name="tbm" value="isch">
-                </div>
-            </form>
+            <div class="google_form">
+                <form action="https://google.com/search">
+                    <div class="row">
+                        <div class="col-2">
+                            <b>Знайти сторінки, що містять...</b>
+                        </div>
+                        <div class="col-6">
+                            &nbsp;
+                        </div>
+                        <div class="col-4 d-none d-lg-block">
+                            <b>Як це зробити в полі пошуку</b>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-2 mt-2 text_adv_name">
+                            усі ці слова:
+                        </div>
+                        <div class="col-6 mt-2">
+                            <input class="input_line_advanced" type="text" name="as_q">
+                        </div>
+                        <div class="col-4 mt-2 d-none d-lg-block text_adv_comment">
+                            Введіть важливі слова: триколірний рет-тер’єр
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-2 mt-2 text_adv_name">
+                            точне слово або фразу:
+                        </div>
+                        <div class="col-6 mt-2">
+                            <input class="input_line_advanced" type="text" name="as_epq">
+                        </div>
+                        <div class="col-4  mt-2 d-none d-lg-block text_adv_comment">
+                            Візьміть точні слова в лапки: "рет-тер’єр"
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-2 mt-2 text_adv_name">
+                            будь-яке з цих слів:
+                        </div>
+                        <div class="col-6 mt-2">
+                            <input class="input_line_advanced" type="text" name="as_oq">
+                        </div>
+                        <div class="col-4 mt-2 d-none d-lg-block text_adv_comment">
+                            Введіть OR між усіма потрібними словами: мініатюрні OR стандартні
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-2 mt-2 text_adv_name">
+                            жодне з цих слів:
+                        </div>
+                        <div class="col-6 mt-2">
+                            <input class="input_line_advanced" type="text" name="as_eq">
+                        </div>
+                        <div class="col-4 mt-2 d-none d-lg-block text_adv_comment">
+                            Поставте знак мінус перед небажаними словами: -гризун, -"Джек Рассел"
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-2 mt-2 text_adv_name">
+                            числа в діапазоні від:
+                        </div>
+                        <div class="col-6 mt-2">
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <input class="input_line_adv_c" type="text" name="as_nlo">
+                                <div>До</div>
+                                <input class="input_line_adv_c" type="text" name="as_nhi">
+                            </div>
+                        </div>
+                        <div class="col-4 mt-2 d-none d-lg-block text_adv_comment">
+                            Поставте 2 крапки між числами та додайте одиницю виміру: 10..35 фунтів, 300..500 дол. США, 2010..2011
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-2 mt-2 text_adv_name">
+                            &nbsp;
+                        </div>
+                        <div class="col-6 mt-2 text-right">
+                            <input class="btn btn-primary" type="submit" value="Розширений пошук">                            
+                        </div>
+                        <div class="col-4 mt-2 d-none d-lg-block text_adv_comment">
+                            &nbsp;
+                        </div>
+                    </div>
+
+                </form>
+            </div>
         </div>
     </body>
 </html>
